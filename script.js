@@ -88,10 +88,10 @@ async function fetchData() {
     const rows = Array.from(table.querySelectorAll('tr'));
     console.log(rows[6]);
     rows.sort((a, b) => {
-        const aValue = parseFloat(a.cells[sortKey === 'marketCap' ? 6 : 5].innerText.replace(/[$,%]/g, ''));
-        const bValue = parseFloat(b.cells[sortKey === 'marketCap' ? 6 : 5].innerText.replace(/[$,%]/g, ''));
+        const aValue = parseFloat(a.cells[sortKey === 'marketCap' ? 6 : 5].innerText.replace(/[$,%,Mkt Cap:$]/g, ''));
+        const bValue = parseFloat(b.cells[sortKey === 'marketCap' ? 6 : 5].innerText.replace(/[$,%,Mkt Cap:$]/g, ''));
     
-        return sortKey === 'marketCap' ? bValue - aValue : aValue - bValue;
+        return sortKey === 'marketCap' ? aValue - bValue : aValue - bValue;
     
     });
     console.log(rows[6]);
