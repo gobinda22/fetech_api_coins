@@ -1,0 +1,40 @@
+*{
+    background-color:#1A1A1C;
+    color: #FFFFFF;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.inputField{
+    width: 50%;
+}
+.inputField input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+}
+.buttonClass{
+    width: 25%;
+}
+.buttonClass button{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+}
+.buttonClass button:hover{
+    cursor: pointer;
+}
